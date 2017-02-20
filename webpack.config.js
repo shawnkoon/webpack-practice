@@ -11,7 +11,12 @@ const config = {
 			{
 				use: 'babel-loader',
 				test: /\.js$/
-			}
+			},
+			{
+				// Order matters
+				use: ['style-loader', 'css-loader'],
+				test: /\.css$/
+			},
 		]
 	}
 };

@@ -3,22 +3,25 @@ import bottles from '../assets/bottles.jpg';
 import city from '../assets/city.jpg';
 import vage from '../assets/vage.png';
 
-const image = document.createElement('img');
-image.src = "http://lorempixel.com/400/400";
 
-document.body.appendChild(image);
+export const displayImage = () => {
+	const image = document.createElement('img');
+	image.src = "http://lorempixel.com/200/200";
 
-const smallImage1 = document.createElement('img');
-smallImage1.src = vage;
+	document.body.appendChild(image);
+};
 
-document.body.appendChild(smallImage1);
+// const smallImage1 = document.createElement('img');
+// smallImage1.src = vage;
 
-const smallImage2 = document.createElement('img');
-smallImage2.src = bottles;
+// document.body.appendChild(smallImage1);
 
-document.body.appendChild(smallImage2);
+// const smallImage2 = document.createElement('img');
+// smallImage2.src = bottles;
 
-const largeImage1 = document.createElement('img');
-largeImage1.src = city;
+// document.body.appendChild(smallImage2);
 
-document.body.appendChild(largeImage1);
+// const largeImage1 = document.createElement('img');
+// largeImage1.src = city;
+
+// document.body.appendChild(largeImage1);
